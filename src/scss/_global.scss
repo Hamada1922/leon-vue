@@ -1,0 +1,46 @@
+@import "src/scss/helpers/_mixins.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --torquoise: #10cab7;
+  --dark-torquoise: #2c4755;
+  --white: #fff;
+  --para: #777;
+  --head-title: #eee;
+  --transition: 0.3s;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.6;
+}
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  @include min-small {
+    width: 750px;
+  }
+  @include min-medium {
+    width: 970px;
+  }
+  @include min-large {
+    width: 1170px;
+  }
+}
